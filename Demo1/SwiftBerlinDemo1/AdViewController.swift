@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AdView : UIView {
+class AdView : UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
@@ -18,7 +18,7 @@ class AdView : UIView {
     var viewModel: AdViewModel! {
         didSet {
             titleLabel?.text = viewModel.title
-            image?.image = UIImage(contentsOfFile: viewModel.image)
+            image?.image = UIImage(named: viewModel.image)
             descriptionLabel?.text = viewModel.description
         }
     }
