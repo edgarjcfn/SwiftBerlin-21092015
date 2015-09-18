@@ -12,12 +12,8 @@
 		6DF6EBAD1BAA107B00EB0D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF6EBAB1BAA107B00EB0D92 /* Main.storyboard */; };
 		6DF6EBAF1BAA107B00EB0D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF6EBAE1BAA107B00EB0D92 /* Assets.xcassets */; };
 		6DF6EBB21BAA107B00EB0D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF6EBB01BAA107B00EB0D92 /* LaunchScreen.storyboard */; };
-		6DF6EBBA1BAA141E00EB0D92 /* BannerAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF6EBB91BAA141E00EB0D92 /* BannerAdView.xib */; settings = {ASSET_TAGS = (); }; };
-		6DF6EBBC1BAA154700EB0D92 /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBBB1BAA154700EB0D92 /* AdView.swift */; settings = {ASSET_TAGS = (); }; };
+		6DF6EBBC1BAA154700EB0D92 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBBB1BAA154700EB0D92 /* AdViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6DF6EBBE1BAA157100EB0D92 /* AdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBBD1BAA157100EB0D92 /* AdViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		6DF6EBC01BAA15DF00EB0D92 /* SmallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF6EBBF1BAA15DF00EB0D92 /* SmallAdView.xib */; settings = {ASSET_TAGS = (); }; };
-		6DF6EBC21BAA182000EB0D92 /* BannerAdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBC11BAA182000EB0D92 /* BannerAdview.swift */; settings = {ASSET_TAGS = (); }; };
-		6DF6EBC41BAA183A00EB0D92 /* SmallAdview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBC31BAA183A00EB0D92 /* SmallAdview.swift */; settings = {ASSET_TAGS = (); }; };
 		6DF6EBC61BAA18A500EB0D92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBC51BAA18A500EB0D92 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -29,12 +25,8 @@
 		6DF6EBAE1BAA107B00EB0D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DF6EBB11BAA107B00EB0D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF6EBB31BAA107C00EB0D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DF6EBB91BAA141E00EB0D92 /* BannerAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerAdView.xib; sourceTree = "<group>"; };
-		6DF6EBBB1BAA154700EB0D92 /* AdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
+		6DF6EBBB1BAA154700EB0D92 /* AdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		6DF6EBBD1BAA157100EB0D92 /* AdViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewModel.swift; sourceTree = "<group>"; };
-		6DF6EBBF1BAA15DF00EB0D92 /* SmallAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmallAdView.xib; sourceTree = "<group>"; };
-		6DF6EBC11BAA182000EB0D92 /* BannerAdview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAdview.swift; sourceTree = "<group>"; };
-		6DF6EBC31BAA183A00EB0D92 /* SmallAdview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallAdview.swift; sourceTree = "<group>"; };
 		6DF6EBC51BAA18A500EB0D92 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,15 +64,11 @@
 				6DF6EBA91BAA107B00EB0D92 /* ViewController.swift */,
 				6DF6EBAB1BAA107B00EB0D92 /* Main.storyboard */,
 				6DF6EBC51BAA18A500EB0D92 /* MainViewController.swift */,
-				6DF6EBB91BAA141E00EB0D92 /* BannerAdView.xib */,
 				6DF6EBAE1BAA107B00EB0D92 /* Assets.xcassets */,
 				6DF6EBB01BAA107B00EB0D92 /* LaunchScreen.storyboard */,
 				6DF6EBB31BAA107C00EB0D92 /* Info.plist */,
-				6DF6EBBB1BAA154700EB0D92 /* AdView.swift */,
+				6DF6EBBB1BAA154700EB0D92 /* AdViewController.swift */,
 				6DF6EBBD1BAA157100EB0D92 /* AdViewModel.swift */,
-				6DF6EBBF1BAA15DF00EB0D92 /* SmallAdView.xib */,
-				6DF6EBC11BAA182000EB0D92 /* BannerAdview.swift */,
-				6DF6EBC31BAA183A00EB0D92 /* SmallAdview.swift */,
 			);
 			path = SwiftBerlinDemo1;
 			sourceTree = "<group>";
@@ -143,10 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF6EBB21BAA107B00EB0D92 /* LaunchScreen.storyboard in Resources */,
-				6DF6EBC01BAA15DF00EB0D92 /* SmallAdView.xib in Resources */,
 				6DF6EBAF1BAA107B00EB0D92 /* Assets.xcassets in Resources */,
 				6DF6EBAD1BAA107B00EB0D92 /* Main.storyboard in Resources */,
-				6DF6EBBA1BAA141E00EB0D92 /* BannerAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,12 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF6EBC61BAA18A500EB0D92 /* MainViewController.swift in Sources */,
-				6DF6EBBC1BAA154700EB0D92 /* AdView.swift in Sources */,
+				6DF6EBBC1BAA154700EB0D92 /* AdViewController.swift in Sources */,
 				6DF6EBBE1BAA157100EB0D92 /* AdViewModel.swift in Sources */,
-				6DF6EBC21BAA182000EB0D92 /* BannerAdview.swift in Sources */,
 				6DF6EBAA1BAA107B00EB0D92 /* ViewController.swift in Sources */,
 				6DF6EBA81BAA107B00EB0D92 /* AppDelegate.swift in Sources */,
-				6DF6EBC41BAA183A00EB0D92 /* SmallAdview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +295,7 @@
 				6DF6EBB81BAA107C00EB0D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

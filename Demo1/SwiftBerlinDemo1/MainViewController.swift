@@ -13,15 +13,22 @@ class MainViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        let viewModel = AdViewModel()
-        viewModel.description = "This is the most awesome product"
-        viewModel.image = "light-bulb-icon"
-        viewModel.title = "MemoSpark"
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch (segue.identifier!) {
+        case "EmbedBanner", "EmbedSmall":
+            if let view = segue.destinationViewController as? AdViewController {
+                let viewModel = AdViewModel()
+                viewModel.description = "This is the most awesome product"
+                viewModel.image = "light-bulb-icon"
+                viewModel.title = "MemoSpark"
 
-        let bannerView = BannerAdView()
-        self.view.addSubview(bannerView)
-        bannerView.viewModel = viewModel
+                view.viewModel = viewModel
+            }
+        default:
+            print("Don't know this segue")
+        }
     }
 
 }
