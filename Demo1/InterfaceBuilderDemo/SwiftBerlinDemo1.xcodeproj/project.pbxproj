@@ -16,6 +16,19 @@
 		6DF6EBC61BAA18A500EB0D92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6EBC51BAA18A500EB0D92 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6D1F2A7B1BAEB94C005F282E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6D1F2A751BAEAC32005F282E /* SmallAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallAdViewController.swift; sourceTree = "<group>"; };
 		6DF6EBA41BAA107B00EB0D92 /* SwiftBerlinDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBerlinDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,18 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D1F2A771BAEB6A9005F282E /* InterfaceBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				6DF6EBAB1BAA107B00EB0D92 /* Main.storyboard */,
-				6DF6EBBB1BAA154700EB0D92 /* AdViewController.swift */,
-				6DF6EBBD1BAA157100EB0D92 /* AdViewModel.swift */,
-				6D1F2A751BAEAC32005F282E /* SmallAdViewController.swift */,
-				6DF6EBC51BAA18A500EB0D92 /* MainViewController.swift */,
-			);
-			name = InterfaceBuilder;
-			sourceTree = "<group>";
-		};
 		6DF6EB9B1BAA107B00EB0D92 = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +71,11 @@
 		6DF6EBA61BAA107B00EB0D92 /* SwiftBerlinDemo1 */ = {
 			isa = PBXGroup;
 			children = (
-				6D1F2A771BAEB6A9005F282E /* InterfaceBuilder */,
+				6DF6EBAB1BAA107B00EB0D92 /* Main.storyboard */,
+				6DF6EBBB1BAA154700EB0D92 /* AdViewController.swift */,
+				6DF6EBBD1BAA157100EB0D92 /* AdViewModel.swift */,
+				6D1F2A751BAEAC32005F282E /* SmallAdViewController.swift */,
+				6DF6EBC51BAA18A500EB0D92 /* MainViewController.swift */,
 				6DF6EBA71BAA107B00EB0D92 /* AppDelegate.swift */,
 				6DF6EBAE1BAA107B00EB0D92 /* Assets.xcassets */,
 				6DF6EBB31BAA107C00EB0D92 /* Info.plist */,
@@ -88,6 +93,7 @@
 				6DF6EBA01BAA107B00EB0D92 /* Sources */,
 				6DF6EBA11BAA107B00EB0D92 /* Frameworks */,
 				6DF6EBA21BAA107B00EB0D92 /* Resources */,
+				6D1F2A7B1BAEB94C005F282E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +260,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftBerlinDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgarneto.demos.SwiftBerlinDemo1;
@@ -265,6 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftBerlinDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgarneto.demos.SwiftBerlinDemo1;
