@@ -34,6 +34,9 @@ class AdView: UIView {
         for component in components {
             component.setupConstraints()
         }
+
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
     }
 
     var viewModel: AdViewModel! {

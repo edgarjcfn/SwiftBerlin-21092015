@@ -35,33 +35,40 @@ class DockAdToBottomRightComponent: ViewComponent {
     }
 
     override func setupConstraints() {
-        adView.snp_makeConstraints { (make) -> Void in
+        adView.snp_updateConstraints { (make) -> Void in
             make.height.equalTo(130)
             make.width.equalTo(130)
             make.bottom.equalTo(container)
             make.right.equalTo(container)
         }
 
-        adView.image.snp_makeConstraints { (make) -> Void in
+        adView.image.snp_updateConstraints { (make) -> Void in
             make.top.equalTo(adView).offset(10)
             make.width.equalTo(80)
             make.height.equalTo(80)
             make.centerX.equalTo(adView)
         }
 
-        adView.titleLabel.snp_makeConstraints { (make) -> Void in
+        adView.titleLabel.snp_updateConstraints { (make) -> Void in
             make.bottom.equalTo(adView).offset(-5)
             make.top.equalTo(adView.image.snp_bottom).offset(5)
             make.left.equalTo(adView)
             make.right.equalTo(adView)
         }
 
-        adView.descriptionLabel.snp_makeConstraints { (make) -> Void in
+        adView.descriptionLabel.snp_updateConstraints { (make) -> Void in
             make.bottom.equalTo(adView).offset(-5)
             make.top.equalTo(adView.image.snp_bottom).offset(5)
             make.left.equalTo(adView)
             make.right.equalTo(adView)
         }
+    }
+
+    override func onRemove() {
+        adView.snp_removeConstraints()
+        adView.image.snp_removeConstraints()
+        adView.titleLabel.snp_removeConstraints()
+        adView.descriptionLabel.snp_removeConstraints()
     }
 
     var adView: AdView {
