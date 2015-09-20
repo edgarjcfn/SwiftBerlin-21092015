@@ -41,17 +41,11 @@ class MainViewController: UIViewController {
         adView1.setupViews()
         adView1.viewModel = AdViewModel.demo()
         view.addSubview(adView1)
-        // Let's make the ad a banner on the top
-        dockTop = DockAdToTopComponent(adView: adView1, container: self.view)
-        adView1.addComponent(dockTop)
 
         adView2 = AdView()
         adView2.setupViews()
         adView2.viewModel = AdViewModel.demo()
         view.addSubview(adView2)
-        // Let's make this ad a small one
-        dockBottomRight = DockAdToBottomRightComponent(adView: adView2, container: self.view)
-        adView2.addComponent(dockBottomRight)
 
         button = UIButton()
         button.setTitle("Continue", forState: .Normal)
@@ -59,6 +53,15 @@ class MainViewController: UIViewController {
         button.setTitleColor(UIColor.whiteColor(), forState: .Highlighted)
         button.addTarget(self, action: "onButtonTapped:", forControlEvents: .TouchUpInside)
         view.addSubview(button)
+
+
+        // Let's make this ad a banner on the top
+        dockTop = DockAdToTopComponent(adView: adView1, container: self.view)
+        adView1.addComponent(dockTop)
+
+        // Let's make this ad a small one
+        dockBottomRight = DockAdToBottomRightComponent(adView: adView2, container: self.view)
+        adView2.addComponent(dockBottomRight)
     }
 
     func setupConstraints() {
