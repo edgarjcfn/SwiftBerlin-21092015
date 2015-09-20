@@ -19,10 +19,12 @@ class AdViewController : UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if let viewModel = self.viewModel {
-            titleLabel?.text = viewModel.title
-            image?.image = UIImage(named: viewModel.image)
-            descriptionLabel?.text = viewModel.description
+
+        titleLabel?.text = viewModel?.title
+        descriptionLabel?.text = viewModel?.description
+        if let imageName = viewModel?.image {
+            image?.image = UIImage(named: imageName)
         }
+
     }
 }

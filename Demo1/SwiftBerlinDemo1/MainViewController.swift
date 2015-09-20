@@ -19,12 +19,7 @@ class MainViewController : UIViewController {
         switch (segue.identifier!) {
         case "EmbedBanner", "EmbedSmall":
             if let view = segue.destinationViewController as? AdViewController {
-                let viewModel = AdViewModel()
-                viewModel.description = "This is the most awesome product"
-                viewModel.image = "light-bulb-icon"
-                viewModel.title = "MemoSpark"
-
-                view.viewModel = viewModel
+                view.viewModel = AdViewModel.demo()
             }
         default:
             print("Don't know this segue")
