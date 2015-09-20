@@ -13,9 +13,12 @@ import UIKit
 class MainViewController: UIViewController {
 
     var mainLabel: UILabel!
-    var bannerView: AdView!
-    var smallView: AdView!
+    var adView1: AdView!
+    var adView2: AdView!
     var button: UIButton!
+
+    var dockTop: DockAdToTopComponent!
+    var dockBottomRight: DockAdToBottomRightComponent!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,19 +37,21 @@ class MainViewController: UIViewController {
         mainLabel.textColor = UIColor.whiteColor()
         view.addSubview(mainLabel)
 
+        adView1 = AdView()
+        adView1.setupViews()
+        adView1.viewModel = AdViewModel.demo()
+        view.addSubview(adView1)
+        // Let's make the ad a banner on the top
+        dockTop = DockAdToTopComponent(adView: adView1, container: self.view)
+        adView1.addComponent(dockTop)
 
-        bannerView = AdView()
-        bannerView.setupViews()
-        bannerView.viewModel = AdViewModel.demo()
-        view.addSubview(bannerView)
-
-        smallView = AdView()
-        smallView.setupViews()
-        smallView.viewModel = AdViewModel.demo()
-        view.addSubview(smallView)
-
-        dockToTop(bannerView)
-        dockToBottomRight(smallView)
+        adView2 = AdView()
+        adView2.setupViews()
+        adView2.viewModel = AdViewModel.demo()
+        view.addSubview(adView2)
+        // Let's make this ad a small one
+        dockBottomRight = DockAdToBottomRightComponent(adView: adView2, container: self.view)
+        adView2.addComponent(dockBottomRight)
 
         button = UIButton()
         button.setTitle("Continue", forState: .Normal)
@@ -68,23 +73,11 @@ class MainViewController: UIViewController {
             make.top.equalTo(mainLabel.snp_bottom).offset(10)
         }
 
-        bannerView.setupConstraints()
-        smallView.setupConstraints()
+        adView1.setupConstraints()
+        adView2.setupConstraints()
     }
 
     func onButtonTapped(sender: UIView) {
 
-    }
-
-    func dockToTop(adView: AdView) -> ViewComponent {
-        let dockComponent = DockAdToTopComponent(adView: adView, container: self.view)
-        adView.addComponent(dockComponent)
-        return dockComponent
-    }
-
-    func dockToBottomRight(adView: AdView) -> ViewComponent {
-        let dockComponent = DockAdToBottomRightComponent(adView: adView, container: self.view)
-        adView.addComponent(dockComponent)
-        return dockComponent
     }
 }
