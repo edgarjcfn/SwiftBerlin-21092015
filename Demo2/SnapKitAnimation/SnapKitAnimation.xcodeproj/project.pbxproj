@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9E6430C1BAF576700E3DCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6430B1BAF576700E3DCE4 /* AppDelegate.swift */; };
+		F9E6430E1BAF576700E3DCE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6430D1BAF576700E3DCE4 /* ViewController.swift */; };
+		F9E643131BAF576700E3DCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E643121BAF576700E3DCE4 /* Assets.xcassets */; };
+		F9E643161BAF576700E3DCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E643141BAF576700E3DCE4 /* LaunchScreen.storyboard */; };
+		F9E643201BAF5B9200E3DCE4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E6431F1BAF5B9200E3DCE4 /* SnapKit.framework */; };
+		F9E643211BAF5B9200E3DCE4 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9E6431F1BAF5B9200E3DCE4 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9E643251BAF5D7D00E3DCE4 /* OutlineFillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E643241BAF5D7D00E3DCE4 /* OutlineFillButton.swift */; settings = {ASSET_TAGS = (); }; };
+		F9E643271BAF5E0A00E3DCE4 /* UIView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E643261BAF5E0A00E3DCE4 /* UIView+Convenience.swift */; settings = {ASSET_TAGS = (); }; };
+		F9E643291BB03EC000E3DCE4 /* UIButton+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E643281BB03EC000E3DCE4 /* UIButton+Closures.swift */; settings = {ASSET_TAGS = (); }; };
+		F9E6432C1BB0498800E3DCE4 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6432B1BB0498800E3DCE4 /* UIColor+Hex.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9E643221BAF5B9200E3DCE4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9E643211BAF5B9200E3DCE4 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F9E643081BAF576700E3DCE4 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E6430B1BAF576700E3DCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9E6430D1BAF576700E3DCE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9E643121BAF576700E3DCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9E643151BAF576700E3DCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9E643171BAF576700E3DCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E6431F1BAF5B9200E3DCE4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		F9E643241BAF5D7D00E3DCE4 /* OutlineFillButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineFillButton.swift; sourceTree = "<group>"; };
+		F9E643261BAF5E0A00E3DCE4 /* UIView+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Convenience.swift"; sourceTree = "<group>"; };
+		F9E643281BB03EC000E3DCE4 /* UIButton+Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Closures.swift"; sourceTree = "<group>"; };
+		F9E6432B1BB0498800E3DCE4 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9E643051BAF576700E3DCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E643201BAF5B9200E3DCE4 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9E642FF1BAF576700E3DCE4 = {
+			isa = PBXGroup;
+			children = (
+				F9E6430A1BAF576700E3DCE4 /* SnapKitAnimation */,
+				F9E643231BAF5B9A00E3DCE4 /* Frameworks */,
+				F9E643091BAF576700E3DCE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9E643091BAF576700E3DCE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9E643081BAF576700E3DCE4 /* Animation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9E6430A1BAF576700E3DCE4 /* SnapKitAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F9E6432A1BB042E400E3DCE4 /* Convenience */,
+				F9E6430B1BAF576700E3DCE4 /* AppDelegate.swift */,
+				F9E6430D1BAF576700E3DCE4 /* ViewController.swift */,
+				F9E643121BAF576700E3DCE4 /* Assets.xcassets */,
+				F9E643141BAF576700E3DCE4 /* LaunchScreen.storyboard */,
+				F9E643171BAF576700E3DCE4 /* Info.plist */,
+			);
+			path = SnapKitAnimation;
+			sourceTree = "<group>";
+		};
+		F9E643231BAF5B9A00E3DCE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9E6431F1BAF5B9200E3DCE4 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			path = SnapKitAnimation;
+			sourceTree = "<group>";
+		};
+		F9E6432A1BB042E400E3DCE4 /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				F9E6432B1BB0498800E3DCE4 /* UIColor+Hex.swift */,
+				F9E643281BB03EC000E3DCE4 /* UIButton+Closures.swift */,
+				F9E643241BAF5D7D00E3DCE4 /* OutlineFillButton.swift */,
+				F9E643261BAF5E0A00E3DCE4 /* UIView+Convenience.swift */,
+			);
+			name = Convenience;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9E643071BAF576700E3DCE4 /* SnapKitAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E6431A1BAF576700E3DCE4 /* Build configuration list for PBXNativeTarget "SnapKitAnimation" */;
+			buildPhases = (
+				F9E643041BAF576700E3DCE4 /* Sources */,
+				F9E643051BAF576700E3DCE4 /* Frameworks */,
+				F9E643061BAF576700E3DCE4 /* Resources */,
+				F9E643221BAF5B9200E3DCE4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKitAnimation;
+			productName = SnapKitAnimation;
+			productReference = F9E643081BAF576700E3DCE4 /* Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9E643001BAF576700E3DCE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = memorado;
+				TargetAttributes = {
+					F9E643071BAF576700E3DCE4 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = F9E643031BAF576700E3DCE4 /* Build configuration list for PBXProject "SnapKitAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9E642FF1BAF576700E3DCE4;
+			productRefGroup = F9E643091BAF576700E3DCE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9E643071BAF576700E3DCE4 /* SnapKitAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9E643061BAF576700E3DCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E643161BAF576700E3DCE4 /* LaunchScreen.storyboard in Resources */,
+				F9E643131BAF576700E3DCE4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9E643041BAF576700E3DCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E643271BAF5E0A00E3DCE4 /* UIView+Convenience.swift in Sources */,
+				F9E6430E1BAF576700E3DCE4 /* ViewController.swift in Sources */,
+				F9E6430C1BAF576700E3DCE4 /* AppDelegate.swift in Sources */,
+				F9E6432C1BB0498800E3DCE4 /* UIColor+Hex.swift in Sources */,
+				F9E643251BAF5D7D00E3DCE4 /* OutlineFillButton.swift in Sources */,
+				F9E643291BB03EC000E3DCE4 /* UIButton+Closures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9E643141BAF576700E3DCE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9E643151BAF576700E3DCE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9E643181BAF576700E3DCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9E643191BAF576700E3DCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9E6431B1BAF576700E3DCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SnapKitAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.memorado.SnapKitAnimation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Animation;
+			};
+			name = Debug;
+		};
+		F9E6431C1BAF576700E3DCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SnapKitAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.memorado.SnapKitAnimation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Animation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9E643031BAF576700E3DCE4 /* Build configuration list for PBXProject "SnapKitAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E643181BAF576700E3DCE4 /* Debug */,
+				F9E643191BAF576700E3DCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E6431A1BAF576700E3DCE4 /* Build configuration list for PBXNativeTarget "SnapKitAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9E6431B1BAF576700E3DCE4 /* Debug */,
+				F9E6431C1BAF576700E3DCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9E643001BAF576700E3DCE4 /* Project object */;
+}
