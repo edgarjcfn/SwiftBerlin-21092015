@@ -21,7 +21,7 @@ Inheritance vs. Composition
 
 
 ---
-background-image: url('./Images/Memorado_Team.jpg')
+background-image: url('./Presentation/Images/Memorado_Team.jpg')
 background-size: 100% 100%
 class: middle, center
 # Who are we?
