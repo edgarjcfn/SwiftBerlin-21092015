@@ -44,6 +44,10 @@ Slow process for defining constraints
 
 Nightmare for source control
 
+Hard to find source for conflicts
+
+IBOutlets (even for constraints)
+
 
 ---
 class: middle, center
@@ -54,6 +58,8 @@ background-color: #FFEECD
 Better visualization of application flow
 
 What you see is what you get (sometimes)
+
+Conflict console (which is nice, I guess...)
 
 ---
 class: middle, center
@@ -74,6 +80,17 @@ Inheritance vs. Composition Demo
 class: middle, center
 background-color: #FFEECD
 # Questions?
+
+---
+class: middle, center
+background-color: #FFEECD
+# References
+
+[SnapKit on Github](https://github.com/SnapKit/SnapKit)
+
+[Cartography on Github](https://github.com/robb/Cartography)
+
+[I Stopped Using NIBs Thanks To Auto Layout](http://www.thecave.com/2014/05/04/i-stopped-using-nibs-thanks-to-auto-layout/?utm_campaign=iOS%2BDev%2BWeekly&utm_medium=web&utm_source=iOS_Dev_Weekly_Issue_145)
 
 ---
 class: middle, center
