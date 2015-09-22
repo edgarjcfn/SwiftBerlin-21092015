@@ -81,6 +81,14 @@ class MainViewController: UIViewController {
     }
 
     func onButtonTapped(sender: UIView) {
+        UIView.animateWithDuration(2) { () -> Void in
+            self.adView1.removeComponent(self.dockTop)
+            self.adView1.addComponent(
+                DockAdToBottomRightComponent(adView: self.adView1, container: self.view)
+            )
+
+            self.adView1.setupConstraints()
+        }
 
     }
 }

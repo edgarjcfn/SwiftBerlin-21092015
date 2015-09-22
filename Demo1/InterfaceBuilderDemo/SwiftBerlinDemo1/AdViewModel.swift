@@ -13,6 +13,10 @@ class AdViewModel {
     var title:String = ""
     var description:String = ""
     var image:String = ""
+    
+}
+
+extension AdViewModel {
 
     static func demo() -> AdViewModel {
         let viewModel = AdViewModel()
