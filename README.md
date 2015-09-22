@@ -12,7 +12,7 @@ You can see the slides [here](http://edgarjcfn.github.io/swift.berlin-210915)
 
 The example code on `Demo2/` was actually the first demo. It shows how to build layouts that adjust their constraints dynamically and even animations with SnapKit
 
-The example code on `Demo1/` shows 2 different that do exactly the same thing: shows an ad in 2 different layouts. One was built with IB, another with SnapKit. On the SnapKit demo we leverage _composition_ over _inheritance_ so that the layouting of the view is a responsibility of what they _hold_ and not of what they _are_.
+The example code on `Demo1/` contains 2 different projects that do exactly the same thing. They both show an ad in 2 different layouts. One was built with IB, another with SnapKit. On the SnapKit demo we leverage _composition_ over _inheritance_ so that the layouting of the view is a responsibility of what they _hold_ and not of what they _are_.
 
 ### References
 [SnapKit on Github](https://github.com/SnapKit/SnapKit)
